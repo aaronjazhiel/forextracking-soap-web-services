@@ -2,11 +2,11 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.7 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2018.11.27 a las 11:21:56 AM CET 
+// Generado el: 2018.11.27 a las 04:59:48 PM CET 
 //
 
 
-package com.optimissa.totrade.forextracking.integration.estrategias.ws.service;
+package com.optimissa.totrade.forextracking.integration.estrategias;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="StudentDetails" type="{service.ws.estrategias.integration.forextracking.totrade.optimissa.com}StudentDetails"/>
+ *         &lt;element name="StudentDetails" type="{http://integration.forextracking.totrade.optimissa.com/estrategias}StudentDetails"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +36,19 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "studentDetails"
+    "tg7066O"
 })
-@XmlRootElement(name = "GetStudentDetailsResponse")
-public class GetStudentDetailsResponse {
+@XmlRootElement(name = "GetEstrategiasResponse")
+public class GetEstrategiasResponse {
 
-    @XmlElement(name = "StudentDetails", required = true)
-    protected StudentDetails studentDetails;
+    @XmlElement(name = "TG7066O", required = true)
+    protected TG7066O tg7066O;
 
-    /**
-     * Obtiene el valor de la propiedad studentDetails.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StudentDetails }
-     *     
-     */
-    public StudentDetails getStudentDetails() {
-        return studentDetails;
+    public TG7066O getTg7066O() {
+        return tg7066O;
     }
 
-    /**
-     * Define el valor de la propiedad studentDetails.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StudentDetails }
-     *     
-     */
-    public void setStudentDetails(StudentDetails value) {
-        this.studentDetails = value;
+    public void setTg7066O(TG7066O tg7066O) {
+        this.tg7066O = tg7066O;
     }
-
 }

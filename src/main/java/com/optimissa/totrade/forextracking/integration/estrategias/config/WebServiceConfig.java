@@ -22,18 +22,18 @@ public class WebServiceConfig {
 		return new ServletRegistrationBean(messageDispatcherServlet, "/ws/*");
 	}
 
-	@Bean(name = "students")
-	public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema studentsSchema) {
+	@Bean(name = "TG70651")
+	public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema estrategiaSchema) {
 		DefaultWsdl11Definition definition = new DefaultWsdl11Definition();
-		definition.setPortTypeName("StudentPort");
-		definition.setTargetNamespace("http://in28minutes.com/students");
+		definition.setPortTypeName("estrategiasPort");
+		definition.setTargetNamespace("http://integration.forextracking.totrade.optimissa.com/estrategias");
 		definition.setLocationUri("/ws");
-		definition.setSchema(studentsSchema);
+		definition.setSchema(estrategiaSchema);
 		return definition;
 	}
 
 	@Bean
 	public XsdSchema studentsSchema() {
-		return new SimpleXsdSchema(new ClassPathResource("student-details.xsd"));
+		return new SimpleXsdSchema(new ClassPathResource("estrategias.xsd"));
 	}
 }

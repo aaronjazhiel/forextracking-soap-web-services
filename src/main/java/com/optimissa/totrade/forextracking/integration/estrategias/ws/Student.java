@@ -1,4 +1,4 @@
-package com.optimissa.totrade.forextracking.integration.estrategias.service;
+package com.optimissa.totrade.forextracking.integration.estrategias.ws;
 
 public class Student {
 	private Long id;

@@ -2,11 +2,11 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.7 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2018.11.27 a las 11:21:56 AM CET 
+// Generado el: 2018.11.28 a las 01:20:34 PM CET 
 //
 
 
-package com.optimissa.totrade.forextracking.integration.estrategias.ws.service;
+package com.optimissa.totrade.forextracking.integration.estrategias;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the com.optimissa.totrade.forextracking.integration.estrategias.ws.service package. 
+ * generated in the com.optimissa.totrade.forextracking.integration.estrategias package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -30,34 +30,18 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.optimissa.totrade.forextracking.integration.estrategias.ws.service
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.optimissa.totrade.forextracking.integration.estrategias
      * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link GetStudentDetailsResponse }
+     * Create an instance of {@link GetEstrategiasRequest }
      * 
      */
-    public GetStudentDetailsResponse createGetStudentDetailsResponse() {
-        return new GetStudentDetailsResponse();
-    }
-
-    /**
-     * Create an instance of {@link StudentDetails }
-     * 
-     */
-    public StudentDetails createStudentDetails() {
-        return new StudentDetails();
-    }
-
-    /**
-     * Create an instance of {@link GetStudentDetailsRequest }
-     * 
-     */
-    public GetStudentDetailsRequest createGetStudentDetailsRequest() {
-        return new GetStudentDetailsRequest();
+    public GetEstrategiasRequest createGetEstrategiasRequest() {
+        return new GetEstrategiasRequest();
     }
 
 }

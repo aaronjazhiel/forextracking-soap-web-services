@@ -2,31 +2,31 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.7 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2018.11.27 a las 11:21:56 AM CET 
+// Generado el: 2018.11.28 a las 01:20:34 PM CET 
 //
 
 
-package com.optimissa.totrade.forextracking.integration.estrategias.ws.service;
+package com.optimissa.totrade.forextracking.integration.estrategias;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para StudentDetails complex type.
+ * <p>Clase Java para anonymous complex type.
  * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="StudentDetails">
+ * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="passportNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="opcion" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="numestrat" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,81 +36,64 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "StudentDetails", propOrder = {
-    "id",
-    "name",
-    "passportNumber"
+@XmlType(name = "", propOrder = {
+    "opcion",
+    "numestrat"
 })
-public class StudentDetails {
+@XmlRootElement(name = "GetEstrategiasRequest")
+public class GetEstrategiasRequest {
 
-    protected int id;
     @XmlElement(required = true)
-    protected String name;
+    protected String opcion;
     @XmlElement(required = true)
-    protected String passportNumber;
+    protected String numestrat;
 
     /**
-     * Obtiene el valor de la propiedad id.
-     * 
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * Define el valor de la propiedad id.
-     * 
-     */
-    public void setId(int value) {
-        this.id = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad name.
+     * Obtiene el valor de la propiedad opcion.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getName() {
-        return name;
+    public String getOpcion() {
+        return opcion;
     }
 
     /**
-     * Define el valor de la propiedad name.
+     * Define el valor de la propiedad opcion.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setName(String value) {
-        this.name = value;
+    public void setOpcion(String value) {
+        this.opcion = value;
     }
 
     /**
-     * Obtiene el valor de la propiedad passportNumber.
+     * Obtiene el valor de la propiedad numestrat.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getPassportNumber() {
-        return passportNumber;
+    public String getNumestrat() {
+        return numestrat;
     }
 
     /**
-     * Define el valor de la propiedad passportNumber.
+     * Define el valor de la propiedad numestrat.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setPassportNumber(String value) {
-        this.passportNumber = value;
+    public void setNumestrat(String value) {
+        this.numestrat = value;
     }
 
 }
